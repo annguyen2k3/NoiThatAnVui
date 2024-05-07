@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #023df1;
+    --text-color: #323c42;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+#header {
+    background-color: #fff;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+.header-search {
+    flex: 1;
+    display: flex;
+    margin: 0px 50px;
+    justify-content: center;
+}
+
+.header-search .search-input {
+    flex: 1;
+    height: 34px;
+    padding: 0px 12px;
+    outline: none;
+}
+
+.header-search .search-button {
+    padding: 0 20px;
+    margin-left: 4px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.header-search .search-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.contact-phone {
+    display: flex;
+    align-items: center;
+}
+
+.contact-phone i {
+    position: relative;
+    top: -2px;
+    font-size: 3.2rem;
+    margin-right: 10px;
+}
+
+.contact-phone div {
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.contact-phone div span {
+    color: red;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
