@@ -5,6 +5,8 @@
 :root {
     --primary-color: #023df1;
     --text-color: #323c42;
+
+    --height-navbar: 42px;
 }
 
 html,
@@ -35,6 +37,7 @@ a {
 
 /* HEADER */
 #header {
+    padding: 10px 0;
     background-color: #fff;
 }
 
@@ -102,4 +105,80 @@ a {
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 3rem;
+}
+
+/* NAVBAR */
+#navbar {
+    height: var(--height-navbar);
+    background-color: var(--primary-color);
+}
+
+#navbar .content {
+    display: flex;
+    height: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    align-items: center;
+}
+
+.nav-category {
+    display: flex;
+    height: 100%;
+    padding-left: 6px;
+    padding-right: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.nav-category::after {
+    content: "";
+    width: 1px;
+    height: 60%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+.nav-category:hover,
+.nav-item:hover {
+    color: #38e5e7;
+    text-shadow: 1px 0 0 #38e5e7;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    height: 100%;
+}
+
+.nav-item {
+    display: flex;
+    height: 100%;
+    padding: 0px 30px;
+    align-items: center;
+}
+
+.subnav-category {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: var(--height-navbar);
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 1px 20px 0 #ccc;
+}
+
+.nav-category:hover .subnav-category {
+    display: block;
+}
+
+.subnav-category .subnav-item {
+    padding: 20px 30px;
+    color: var(--text-color);
+    text-shadow: none;
+}
+
+.subnav-category .subnav-item:hover {
+    background-color: #d2d2d2;
 }
