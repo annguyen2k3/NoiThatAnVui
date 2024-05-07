@@ -141,7 +141,7 @@ a {
 }
 
 .nav-category:hover,
-.nav-item:hover {
+.nav-item:hover a {
     color: #38e5e7;
     text-shadow: 1px 0 0 #38e5e7;
     cursor: pointer;
@@ -157,6 +157,10 @@ a {
     height: 100%;
     padding: 0px 30px;
     align-items: center;
+}
+
+.nav-item a {
+    color: #fff;
 }
 
 .subnav-category {
@@ -175,6 +179,9 @@ a {
 
 .subnav-category .subnav-item {
     padding: 20px 30px;
+}
+
+.subnav-category .subnav-item a {
     color: var(--text-color);
     text-shadow: none;
 }
