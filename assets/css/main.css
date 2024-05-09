@@ -214,8 +214,55 @@ a {
 }
 
 /* HOME PRODUCT */
+.gro-product {
+    margin-top: 40px;
+}
+
+.gro-product .header {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.gro-product.hot .header {
+    border-bottom: 3px solid #e84429;
+}
+
+.gro-product .header-content {
+    display: inline-block;
+    padding: 20px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.gro-product.hot .header-content {
+    background-color: #e84429;
+}
+
+.gro-product .container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 .product-item-wrap {
     width: 20%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-item:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.product-img-wrap {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .product-img {
@@ -224,6 +271,56 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 10px 8px;
+}
+
+.product-name {
+    display: -webkit-box;
+    line-height: 1.8rem;
+    height: 50px;
+    color: var(--text-color);
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.product-price {
+    text-align: center;
+}
+
+.product-price .price-none {
+    display: none;
+}
+
+.product-price.none .price-none {
+    display: inline-block;
+}
+
+.product-price.none .product-price-old,
+.product-price.none .product-price-new {
+    display: none;
+}
+
+.product-price-old {
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.none,
+.product-price-new {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 /* FOOTER */
