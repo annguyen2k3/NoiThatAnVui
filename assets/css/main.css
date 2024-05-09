@@ -113,6 +113,15 @@ a {
     background-color: var(--primary-color);
 }
 
+.navbar-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 #navbar .content {
     display: flex;
     height: 100%;
@@ -170,7 +179,9 @@ a {
     top: var(--height-navbar);
     width: 250px;
     background-color: #fff;
-    box-shadow: 0 1px 20px 0 #ccc;
+    box-shadow: 0 1px 10px 0 #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .nav-category:hover .subnav-category {
@@ -179,6 +190,8 @@ a {
 
 .subnav-category .subnav-item {
     padding: 20px 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .subnav-category .subnav-item a {
@@ -188,4 +201,143 @@ a {
 
 .subnav-category .subnav-item:hover {
     background-color: #d2d2d2;
+}
+
+/* Banner */
+.banner {
+    margin-top: 20px;
+}
+
+.banner-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* HOME PRODUCT */
+.product-item-wrap {
+    width: 20%;
+}
+
+.product-img {
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+}
+
+/* FOOTER */
+#footer {
+    padding-top: 45px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-wrap {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 45px;
+}
+
+.footer-col {
+    width: 25%;
+}
+
+.footer-header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.footer-header::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-radius: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+}
+
+.footer-body {
+    margin-top: 40px;
+}
+
+.footer-body .item {
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.footer-body .item i {
+    margin-right: 6px;
+}
+
+.footer-body .item a {
+    color: #fff;
+}
+
+.footer-body .item .link {
+    color: var(--primary-color);
+}
+
+.footer-body .item .img-gpkd {
+    width: 70%;
+}
+
+.footer-body .item img {
+    width: 100%;
+}
+
+.footer-body .item .bank-header {
+    margin-top: 14px;
+    font-weight: 600;
+}
+
+.footer-body .bank-info li {
+    margin-top: 8px;
+}
+
+.footer-body .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-body .icon i {
+    position: relative;
+    left: 3px;
+}
+
+.footer-body .icon a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-face {
+    background-color: #0769ff;
+}
+
+.icon-yt {
+    background-color: red;
+}
+
+.icon-tt {
+    background-color: #0e0e0e;
+}
+
+.footer-copyright {
+    background-color: #5b5b5b;
+    color: #938f83;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 20px;
 }
