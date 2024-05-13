@@ -149,6 +149,7 @@ a {
     right: 0;
 }
 
+.nav-item.active a,
 .nav-category:hover,
 .nav-item:hover a {
     color: #38e5e7;
