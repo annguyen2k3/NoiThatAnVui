@@ -263,14 +263,13 @@ a {
 }
 
 .product-item-wrap {
-    display: none;
     width: 20%;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.product-item-wrap.show {
-    display: block;
+.product-item-wrap:nth-child(n + 6) {
+    display: none;
 }
 
 .product-item-wrap:not(:first-child) {
@@ -493,4 +492,66 @@ a {
     padding: 20px 0;
     text-align: center;
     line-height: 20px;
+}
+
+/* CONTACT FIXED */
+.contact-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.contact-fixed .contact-item {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.contact-fixed .contact-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-fixed .contact-item img {
+    width: 60%;
+}
+
+.contact-fixed .contact-item.zalo {
+    --box-color: 33, 150, 243;
+    background-color: rgb(var(--box-color));
+    animation: wave 1.5s infinite, shake 0.4s infinite;
+}
+
+.contact-fixed .contact-item.phone {
+    --box-color: 232, 68, 41;
+    background-color: rgb(var(--box-color));
+    animation: wave 1.5s infinite, shake 0.4s infinite;
+}
+
+@keyframes wave {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--box-color), 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(var(--box-color), 0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
