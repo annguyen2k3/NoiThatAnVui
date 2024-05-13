@@ -269,10 +269,6 @@ a {
     border-radius: 10px;
 }
 
-.product-item-wrap:nth-child(n + 6) {
-    display: none;
-}
-
 .product-item-wrap:not(:first-child) {
     margin-left: 10px;
 }

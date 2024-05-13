@@ -1,9 +1,15 @@
 /* PC */
 @media screen and (min-width: 1024px) {
+    .product-item-wrap:nth-child(n + 6) {
+        display: none;
+    }
 }
 
 /* Tablet & Mobile */
 @media screen and (max-width: 1023px) {
+    .gro-product .directional {
+        display: block;
+    }
 }
 
 /* Table */
@@ -15,8 +21,45 @@
     .nav-item {
         padding: 0px 10px;
     }
+
+    .product-item-wrap {
+        width: 25%;
+    }
+
+    .product-item-wrap:nth-child(n + 5) {
+        display: none;
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 739px) {
+    .header-top {
+        flex-wrap: wrap;
+    }
+
+    .header-search {
+        order: 3;
+        flex: 1 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .navbar-sticky {
+        top: -1px;
+    }
+
+    .product-item-wrap {
+        width: 50%;
+    }
+
+    .product-item-wrap:nth-child(n + 3) {
+        display: none;
+    }
+
+    .footer-wrap {
+        display: block;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
 }
