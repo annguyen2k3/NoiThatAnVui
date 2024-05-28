@@ -26,10 +26,6 @@
         width: 25%;
     }
 
-    .product-item-wrap:nth-child(n + 5) {
-        display: none;
-    }
-
     .nav-category:hover .subnav-category {
         display: block;
     }
@@ -149,10 +145,6 @@
 
     .product-item-wrap {
         width: 50%;
-    }
-
-    .product-item-wrap:nth-child(n + 3) {
-        display: none;
     }
 
     .footer-wrap {

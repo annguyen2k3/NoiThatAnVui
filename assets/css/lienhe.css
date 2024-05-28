@@ -1,0 +1,77 @@
+.main-content .contact-desc {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main-content .contact-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.main-content .contact-tilte {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main-content .contact-phone .list {
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.main-content .contact-phone .item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.main-content .contact-phone .item div,
+.main-content .contact-phone .item a {
+    font-size: 1.8rem;
+}
+
+.main-content .contact-phone .item i {
+    font-size: 2.8rem;
+    color: red;
+}
+
+.contact-fb {
+    margin-top: 70px;
+}
+
+.contact-fb .img-fanpage {
+    margin: 10px auto;
+    width: 40%;
+}
+
+.contact-fb .img-fanpage img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-visit-fb {
+    border: none;
+    background-color: var(--primary-color);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.btn-visit-fb .fb-link {
+    display: block;
+    color: white;
+    padding: 16px 20px;
+}
+
+.contact-address {
+    margin-top: 70px;
+}
+
+.contact-address .address {
+    text-align: center;
+    margin-top: 20px;
+}

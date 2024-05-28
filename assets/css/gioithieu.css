@@ -7,32 +7,6 @@
     margin-top: 30px;
 }
 
-.plugin-facebook {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-.plugin-facebook .plugin-wrap {
-    margin: 0 auto;
-}
-
-.btn-visited {
-    width: 140px;
-    border: none;
-    background-color: var(--primary-color);
-    border-radius: 4px;
-}
-
-.btn-visited .page-link {
-    display: block;
-    color: white;
-    width: 100%;
-    padding: 10px 0;
-}
-
 .content-desc {
     margin-top: 20px;
     line-height: 3rem;
