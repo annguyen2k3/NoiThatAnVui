@@ -60,18 +60,37 @@ let indices = {
 direc_nexts.forEach((button) => {
     button.addEventListener("click", (event) => {
         const listType = event.currentTarget.getAttribute("data-list");
-        const container = $(`.container[data-list="${listType}"]`);
-        const widthTranslate = $(".product-item-wrap").offsetWidth;
-        const numItem = container.querySelectorAll(
-            " .product-item-wrap"
-        ).length;
 
         indices[listType]++;
-        if (indices[listType] >= numItem - 5) {
-            indices[listType] = 0;
-        }
-        container.style.transform = `translateX(${
-            (widthTranslate + 8) * -1 * indices[listType]
-        }px)`;
+
+        handelSlideClick(listType);
     });
 });
+
+direc_backs.forEach((button) => {
+    button.addEventListener("click", (event) => {
+        const listType = event.currentTarget.getAttribute("data-list");
+
+        indices[listType]--;
+
+        handelSlideClick(listType);
+    });
+});
+
+function handelSlideClick(listType) {
+    const container = $(`.container[data-list="${listType}"]`);
+    const widthTranslate = $(".product-item-wrap").offsetWidth;
+    const numItem = container.querySelectorAll(" .product-item-wrap").length;
+
+    if (indices[listType] > numItem - 5) {
+        indices[listType] = 0;
+    }
+
+    if (indices[listType] < 0) {
+        indices[listType] = numItem - 5;
+    }
+
+    container.style.transform = `translateX(${
+        (widthTranslate + 8) * -1 * indices[listType]
+    }px)`;
+}
