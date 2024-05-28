@@ -1,7 +1,7 @@
 /* PC */
 @media screen and (min-width: 1024px) {
-    .product-item-wrap:nth-child(n + 6) {
-        display: none;
+    .nav-category:hover .subnav-category {
+        display: block;
     }
 }
 
@@ -29,6 +29,10 @@
     .product-item-wrap:nth-child(n + 5) {
         display: none;
     }
+
+    .nav-category:hover .subnav-category {
+        display: block;
+    }
 }
 
 /* Mobile */
@@ -43,8 +47,104 @@
         margin: 20px 0 0 0;
     }
 
+    #navbar {
+        height: auto;
+    }
+
+    #navbar .content {
+        display: none;
+        max-width: 100%;
+    }
+
+    #navbar .content.show {
+        display: block;
+    }
+
     .navbar-sticky {
         top: -1px;
+    }
+
+    .navbar-sticky .btn-sticky {
+        margin-left: 20px;
+        padding: 0 22px;
+        display: flex;
+        width: var(--height-navbar);
+        height: var(--height-navbar);
+        border: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: white;
+        background: transparent;
+    }
+
+    .nav-category {
+        flex-direction: column;
+        align-items: start;
+        padding: 15px 0 15px 34px;
+        transition: 0.7s;
+    }
+
+    .nav-category:hover {
+        transition: 0.7s;
+    }
+
+    .nav-category i:first-child {
+        display: none;
+    }
+
+    .nav-category::after {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+    }
+
+    .nav-item {
+        padding: 15px 8px;
+        margin-left: 25px;
+    }
+
+    .nav-item:hover {
+        background-color: #ccc;
+    }
+
+    .nav-item a {
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .subnav-category {
+        display: none;
+        width: 100%;
+        position: unset;
+        margin-top: 14px;
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 1px solid white;
+    }
+
+    .subnav-category.show {
+        display: block;
+    }
+
+    .subnav-category .subnav-item {
+        border-radius: 0;
+    }
+
+    .subnav-category .subnav-item a {
+        color: white;
+        transition: 0.3s;
+    }
+
+    .subnav-item:hover a,
+    .nav-item:hover a {
+        color: #000;
+        margin-left: 10px;
+        transition: 0.3s;
     }
 
     .product-item-wrap {
@@ -61,5 +161,9 @@
 
     .footer-col {
         width: 100%;
+    }
+
+    .footer-body .item img {
+        width: 50%;
     }
 }

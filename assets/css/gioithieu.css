@@ -1,0 +1,60 @@
+.title {
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.plugin-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.plugin-facebook .plugin-wrap {
+    margin: 0 auto;
+}
+
+.btn-visited {
+    width: 140px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.btn-visited .page-link {
+    display: block;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.content-desc {
+    margin-top: 20px;
+    line-height: 3rem;
+}
+
+.list-product-desc {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-left: 40px;
+    line-height: 3rem;
+}
+
+.list-product-img {
+    display: flex;
+    margin-top: 30px;
+}
+
+.list-product-img div {
+    width: 20%;
+    max-width: 20%;
+    padding-top: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

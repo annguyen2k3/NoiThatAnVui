@@ -52,11 +52,16 @@
     </header>
 
     <nav id="navbar" class="navbar-sticky">
+        <button class="btn-sticky">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <div class="content">
             <div class="nav-category">
-                <i class="fa-solid fa-bars-staggered" style="margin-right: 10px;"></i>
-                <span>Danh mục sản phẩm</span>
-                <i class="fa-solid fa-chevron-down" style="margin-left: 6px;"></i>
+                <div class="btn_Category">
+                    <i class="fa-solid fa-bars-staggered" style="margin-right: 10px;"></i>
+                    <span>Danh mục sản phẩm</span>
+                    <i class="fa-solid fa-chevron-down" style="margin-left: 6px;"></i>
+                </div>
 
                 <!-- subnav category -->
                 <ul class="subnav-category">
@@ -94,23 +99,23 @@
             </div>
             <ul class="nav-list">
                 <li class="nav-item active">
-                    <a href="#!">
+                    <a href="/">
                         Trang chủ
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#!">
-                        Thiết kế và thi công nội thất
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!">
+                    <a href="./gioithieu.html">
                         Giới thiệu
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#!">
                         Liên hệ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!">
+                        Tin tức
                     </a>
                 </li>
                 <li class="nav-item">
@@ -125,12 +130,22 @@
     <main class="main-content">
         <div class="content">
             <!-- Banner -->
-            <div class="banner">
-                <img src="./assets/images/banner.png" class="banner-img" alt="Nội Thất An Vui">
+            <div class="banner-wrap">
+                <div class="banner">
+                    <img src="./assets/images/banner-1.jpeg" class="banner-img" alt="Nội Thất An Vui">
+                    <img src="./assets/images/banner-2.jpeg" class="banner-img" alt="Nội Thất An Vui">
+                    <img src="./assets/images/banner-3.jpeg" class="banner-img" alt="Nội Thất An Vui">
+                </div>
+                <div class="dots">
+                    <div class="dot dot-0 active"></div>
+                    <div class="dot dot-1"></div>
+                    <div class="dot dot-2"></div>
+                </div>
             </div>
 
             <!-- List Product -->
             <div class="list-product-wrap">
+                <!-- List Hot -->
                 <div class="gro-product hot">
                     <h3 class="header">
                         <div class="header-content">
@@ -138,7 +153,7 @@
                             HOT!!! SẢN PHẨM ƯU ĐÃI
                         </div>
                     </h3>
-                    <div class="container">
+                    <div class="container" data-list="hot">
                         <!-- Product 1 -->
                         <div class="product-item-wrap">
                             <a href="#" class="product-item">
@@ -265,20 +280,18 @@
                                 </div>
                             </a>
                         </div>
-
-
-                        <!-- Direction -->
-                        <div class="directional">
-                            <button class="direc-back">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="direc-next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- Direction -->
+                    <div class="directional">
+                        <button class="direc-back" data-list="hot">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="direc-next" data-list="hot">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-
+                <!-- List Cafe -->
                 <div class="gro-product">
                     <h3 class="header">
                         <div class="header-content">
@@ -286,21 +299,21 @@
                             BÀN GHẾ CÀ PHÊ
                         </div>
                     </h3>
-                    <div class="container">
+                    <div class="container" data-list="cf">
                         <!-- Product 1 -->
                         <div class="product-item-wrap">
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-1.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-cf-1.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <div class="product-name">Bộ bàn ghế sắt lá sơn tĩnh điện</div>
+                                    <div class="product-name">Bộ bàn ghế Palet nệm</div>
                                     <div class="product-price">
                                         <span class="price-none">Liên hệ</span>
-                                        <span class="product-price-old">900.000đ</span>
-                                        <span class="product-price-new">760.000đ</span>
+                                        <span class="product-price-old">1.200.000đ</span>
+                                        <span class="product-price-new">1.500.000đ</span>
                                     </div>
                                 </div>
                             </a>
@@ -310,15 +323,15 @@
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-2.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-cf-2.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <div class="product-name">Ghế Camping Lưới Phối Tay Gỗ</div>
+                                    <div class="product-name">Bộ bàn ghế sắt nệm nệm</div>
                                     <div class="product-price">
                                         <span class="price-none">Liên hệ</span>
-                                        <span class="product-price-old">200.000đ</span>
-                                        <span class="product-price-new">180.000đ</span>
+                                        <span class="product-price-old">1.500.00đ</span>
+                                        <span class="product-price-new">2.000.000đ</span>
                                     </div>
                                 </div>
                             </a>
@@ -328,15 +341,15 @@
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-3.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-cf-3.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <div class="product-name">Combo Sofa bed và bàn kim cương</div>
-                                    <div class="product-price none">
+                                    <div class="product-name">Bộ bàn cafe Sofa bọc nệm</div>
+                                    <div class="product-price">
                                         <span class="price-none">Liên hệ</span>
-                                        <span class="product-price-old">900.000đ</span>
-                                        <span class="product-price-new">760.000đ</span>
+                                        <span class="product-price-old">2.300.000đ</span>
+                                        <span class="product-price-new">2.500.000đ</span>
                                     </div>
                                 </div>
                             </a>
@@ -346,15 +359,15 @@
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-4.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-cf-4.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
-                                    <div class="product-name">Bộ bàn ghế Sofa cà phê da</div>
+                                    <div class="product-name">Bộ bàn ghế Sofa cà phê </div>
                                     <div class="product-price">
                                         <span class="price-none">Liên hệ</span>
-                                        <span class="product-price-old">900.000đ</span>
-                                        <span class="product-price-new">760.000đ</span>
+                                        <span class="product-price-old">3.000.000đ</span>
+                                        <span class="product-price-new">3.200.000đ</span>
                                     </div>
                                 </div>
                             </a>
@@ -415,18 +428,18 @@
                         </div>
 
 
-                        <!-- Direction -->
-                        <div class="directional">
-                            <button class="direc-back">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="direc-next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- Direction -->
+                    <div class="directional">
+                        <button class="direc-back" data-list="cf">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="direc-next" data-list="cf">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-
+                <!-- List NH -->
                 <div class="gro-product">
                     <h3 class="header">
                         <div class="header-content">
@@ -434,13 +447,13 @@
                             BÀN GHẾ QUÁN ĂN, NHÀ HÀNG
                         </div>
                     </h3>
-                    <div class="container">
+                    <div class="container" data-list="nh">
                         <!-- Product 1 -->
                         <div class="product-item-wrap">
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-1.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-nh-1.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
@@ -458,7 +471,7 @@
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-2.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-nh-2.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
@@ -476,7 +489,7 @@
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-3.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-nh-3.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
@@ -494,7 +507,7 @@
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-4.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-nh-4.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
@@ -512,7 +525,7 @@
                             <a href="#" class="product-item">
                                 <div class="product-img-wrap">
                                     <div class="product-img"
-                                        style="background-image: url(./assets/images/products/sp-hot-5.jpg);">
+                                        style="background-image: url(./assets/images/products/sp-nh-5.jpg);">
                                     </div>
                                 </div>
                                 <div class="product-info">
@@ -561,20 +574,18 @@
                                 </div>
                             </a>
                         </div>
-
-
-                        <!-- Direction -->
-                        <div class="directional">
-                            <button class="direc-back">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="direc-next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- Direction -->
+                    <div class="directional">
+                        <button class="direc-back" data-list="nh">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="direc-next" data-list="nh">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-
+                <!-- List Sofa -->
                 <div class="gro-product">
                     <h3 class="header">
                         <div class="header-content">
@@ -582,7 +593,7 @@
                             SOFA
                         </div>
                     </h3>
-                    <div class="container">
+                    <div class="container" data-list="sf">
                         <!-- Product 1 -->
                         <div class="product-item-wrap">
                             <a href="#" class="product-item">
@@ -709,20 +720,18 @@
                                 </div>
                             </a>
                         </div>
-
-
-                        <!-- Direction -->
-                        <div class="directional">
-                            <button class="direc-back">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="direc-next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- Direction -->
+                    <div class="directional">
+                        <button class="direc-back" data-list="sf">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="direc-next" data-list="sf">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-
+                <!-- List Van phong -->
                 <div class="gro-product">
                     <h3 class="header">
                         <div class="header-content">
@@ -730,7 +739,7 @@
                             BÀN GHẾ VĂN PHÒNG, GAMING
                         </div>
                     </h3>
-                    <div class="container">
+                    <div class="container" data-list="vp">
                         <!-- Product 1 -->
                         <div class="product-item-wrap">
                             <a href="#" class="product-item">
@@ -857,20 +866,18 @@
                                 </div>
                             </a>
                         </div>
-
-
-                        <!-- Direction -->
-                        <div class="directional">
-                            <button class="direc-back">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="direc-next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- Direction -->
+                    <div class="directional">
+                        <button class="direc-back" data-list="vp">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="direc-next" data-list="vp">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-
+                <!-- List du -->
                 <div class="gro-product">
                     <h3 class="header">
                         <div class="header-content">
@@ -878,7 +885,7 @@
                             DÙ CHE NẮNG NGOÀI TRỜI
                         </div>
                     </h3>
-                    <div class="container">
+                    <div class="container" data-list="du">
                         <!-- Product 1 -->
                         <div class="product-item-wrap">
                             <a href="#" class="product-item">
@@ -1005,20 +1012,18 @@
                                 </div>
                             </a>
                         </div>
-
-
-                        <!-- Direction -->
-                        <div class="directional">
-                            <button class="direc-back">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="direc-next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- Direction -->
+                    <div class="directional">
+                        <button class="direc-back" data-list="du">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="direc-next" data-list="du">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-
+                <!-- List xd -->
                 <div class="gro-product">
                     <h3 class="header">
                         <div class="header-content">
@@ -1026,7 +1031,7 @@
                             XÍCH ĐU
                         </div>
                     </h3>
-                    <div class="container">
+                    <div class="container" data-list="xd">
                         <!-- Product 1 -->
                         <div class="product-item-wrap">
                             <a href="#" class="product-item">
@@ -1153,21 +1158,19 @@
                                 </div>
                             </a>
                         </div>
-
-
-                        <!-- Direction -->
-                        <div class="directional">
-                            <button class="direc-back">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="direc-next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                    </div>
+                    <!-- Direction -->
+                    <div class="directional">
+                        <button class="direc-back" data-list="xd">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="direc-next" data-list="xd">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-
+        </div>
     </main>
 
     <footer id="footer">
@@ -1287,7 +1290,7 @@
             <div class="content">
                 <p>XƯỞNG SẢN XUẤT NỘI THẤT VÀ GIA DỤNG AN VUI</p>
                 <p>MST: 0310655912</p>
-                <p>© Copyright 2024 - Nội Thất An Vui</p>
+                <p>© Copyright 2024 - Nguyễn Mậu An _ DH52110534 _ D21_TH08</p>
             </div>
         </div>
     </footer>
@@ -1299,11 +1302,13 @@
             </a>
         </div>
         <div class="contact-item phone">
-            <a href="https://zalo.me/0343513046" class="phone-link">
+            <a href="tel:0908520422" class="phone-link">
                 <img src="./assets/images/phone.png" alt="">
             </a>
         </div>
     </div>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
