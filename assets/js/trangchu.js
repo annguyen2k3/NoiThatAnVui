@@ -1,5 +1,4 @@
 // TODO Banner
-
 const banner = $(".banner");
 const banner_imgs = $$(".banner-img");
 const dots = $$(".dots .dot");
@@ -81,3 +80,6 @@ function handelSlideClick(listType) {
         (widthTranslate + 8) * -1 * indices[listType]
     }px)`;
 }
+
+// TODO Render List Product
+const listHot = $(`.container[data-list="hot"]`);
