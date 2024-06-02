@@ -333,11 +333,13 @@ a {
     background-position: center;
     background-size: cover;
     border-radius: 2px;
-    transition: transform 0.3s ease;
+    transition: 0.3s;
+    transform: scale(1);
 }
 
 .product-item:hover .product-img {
     transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .product-info {
