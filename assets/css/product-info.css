@@ -1,0 +1,226 @@
+.product-content {
+    padding: 40px 0;
+}
+
+.product-content .content {
+    display: flex;
+}
+
+.product-content .left-content {
+    width: 80%;
+}
+
+.product-content .pro-map a {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.product-content .pro-map a.index {
+    color: #000;
+    font-weight: 500;
+}
+
+.product-content .pro-info {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pro-info .pro-img-wrap {
+    width: 40%;
+}
+
+.pro-info .pro-img-show {
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.pro-img-show-direc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    justify-content: space-between;
+}
+
+.pro-img-show:hover .pro-img-show-direc {
+    display: flex;
+}
+
+.pro-img-show-direc div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(204, 204, 204, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-info .pro-list-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pro-info .pro-item-img {
+    width: calc(25% - 10px);
+    padding-top: calc(25% - 10px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.pro-info .pro-item-img.show {
+    opacity: 1;
+}
+
+.pro-info .pro-details {
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pro-details div {
+    margin-top: 20px;
+    line-height: 2.2rem;
+}
+
+.pro-details .name {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.pro-details .name::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.pro-details .price {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.pro-details .btn-contact {
+    display: flex;
+    gap: 30px;
+}
+
+.pro-details .btn-contact a {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+}
+
+.cate-list-wrap .cate-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cate-list-wrap .cate-heading::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+
+.cate-list-wrap .cate-item {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.cate-list-wrap .cate-item a {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    color: #000;
+}
+
+.cate-list-wrap .cate-item:hover a {
+    color: var(--primary-color);
+}
+
+.right-content .product-new-ads {
+    margin-top: 30px;
+}
+
+.right-content .product-new-ads .title {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.right-content .product-new-ads .title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 10px 0;
+    background-color: #ccc;
+}
+
+.product-new-ads .cate-item {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    height: 76px;
+}
+
+.product-new-ads .cate-item:hover {
+    background-color: #dbdada;
+}
+
+.product-new-ads .cate-item .cate-item-link {
+    display: block;
+    width: 100%;
+}
+
+.product-new-ads .cate-item .item-wrap {
+    display: flex;
+}
+
+.product-new-ads .cate-item .item-img {
+    width: 30%;
+    height: 76px;
+}
+
+.product-new-ads .cate-item .item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-new-ads .cate-item .item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.product-new-ads .cate-item .item-info-name {
+    color: var(--primary-color);
+}
+
+.product-new-ads .cate-item .item-info-price {
+    color: black;
+    font-weight: 500;
+}
