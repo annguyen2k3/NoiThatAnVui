@@ -275,4 +275,11 @@
     .cate-list-wrap {
         margin-top: 20px;
     }
+
+    .product-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

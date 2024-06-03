@@ -147,6 +147,17 @@
         width: calc(50% - 5px);
     }
 
+    .product-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-price-old {
+        margin-left: 0;
+    }
+
     .footer-wrap {
         display: block;
     }
