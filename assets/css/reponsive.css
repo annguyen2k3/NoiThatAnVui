@@ -144,7 +144,7 @@
     }
 
     .product-item-wrap {
-        width: 50%;
+        width: calc(50% - 5px);
     }
 
     .footer-wrap {

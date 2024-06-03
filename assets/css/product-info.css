@@ -224,3 +224,33 @@
     color: black;
     font-weight: 500;
 }
+
+/* TODO REPONSIVE */
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .product-content .content {
+        display: block;
+    }
+
+    .product-content .left-content {
+        width: 100%;
+    }
+
+    .product-content .pro-info {
+        flex-direction: column;
+    }
+
+    .pro-info .pro-img-wrap {
+        width: 100%;
+    }
+
+    .pro-info .pro-details {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .right-content {
+        margin-top: 40px;
+    }
+}

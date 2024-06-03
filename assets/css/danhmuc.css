@@ -252,3 +252,27 @@
     background-color: var(--primary-color);
     border-radius: 2px;
 }
+
+/* TODO REPONSIVE */
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .category-content .content {
+        flex-direction: column-reverse;
+    }
+
+    .category-content .right-content {
+        width: 100%;
+    }
+
+    .btn-direc {
+        padding: 10px;
+    }
+
+    .category-content .left-content {
+        width: 100%;
+    }
+
+    .cate-list-wrap {
+        margin-top: 20px;
+    }
+}

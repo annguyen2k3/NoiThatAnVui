@@ -110,6 +110,10 @@
     margin-top: 30px;
 }
 
+.form-group.gro-phone {
+    margin-left: 20px;
+}
+
 #contactForm .gro-desc textarea {
     width: 100%;
 }
@@ -137,4 +141,17 @@
     position: absolute;
     left: 0;
     bottom: -18px;
+}
+
+/* TODO REPONSIVE */
+/* Mobile */
+@media screen and (max-width: 739px) {
+    #contactForm .form-group,
+    #contactForm .form-group input {
+        width: 100%;
+    }
+
+    .form-group.gro-phone {
+        margin-left: 0;
+    }
 }

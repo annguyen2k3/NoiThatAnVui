@@ -77,7 +77,7 @@ function handelSlideClick(listType) {
     }
 
     container.style.transform = `translateX(${
-        (widthTranslate + 8) * -1 * indices[listType]
+        (widthTranslate + 10) * -1 * indices[listType]
     }px)`;
 }
 

@@ -70,6 +70,28 @@
     color: var(--text-color);
 }
 
+.news-direc {
+    text-align: center;
+}
+
+.btn-direc {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.btn-direc:hover {
+    color: var(--primary-color);
+}
+
+.btn-direc.active {
+    color: white;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
 .content-right .sideBar-item {
     margin-bottom: 30px;
 }
@@ -145,4 +167,44 @@
 .content-right .news-info {
     justify-content: center;
     font-size: 1.4rem;
+}
+
+/* TODO REPONSIVE */
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .main-content .content {
+        display: block;
+    }
+
+    .content-left {
+        width: 100%;
+    }
+
+    .content-right {
+        width: 100%;
+    }
+
+    .news-item {
+        display: block;
+        height: auto;
+    }
+
+    .news-img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .news-info {
+        padding: 20px;
+        line-height: 3rem;
+    }
+
+    .btn-direc {
+        padding: 10px;
+    }
+
+    .content-right .title {
+        margin-top: 30px;
+    }
 }

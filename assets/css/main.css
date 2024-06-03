@@ -248,7 +248,7 @@ a {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
 }
 
 .banner-wrap .dot {
